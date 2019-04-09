@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>택배 이미지 뽑기</title>
+</head>
+
+<body>
+    <center>
+    <table border = "1" width="500" height="400" style=border-collapse:collapse;>
+      <tr>
+        <td align=center>대한택배
+          <td align=center><img src="" id="img1" alt=""></td>
+        </td>
+      </tr>
+      <tr>
+          <td align=center>한진택배
+            <td align=center><img src="" id="img2" alt=""></td>
+          </td>
+        </tr>
+        <tr>
+            <td align=center>롯데택배
+              <td align=center><img src="" id="img3" alt=""></td>
+            </td>
+          </tr>
+          <tr>
+              <td align=center>로젠택배
+                <td align=center><img src="" id="img4" alt=""></td>
+              </td>
+            </tr>
+            <tr>
+                <td align=center>우체국 택배
+                  <td align=center><img src="" id="img5" alt=""></td>
+                </td>
+              </tr>
+    </table>
+</center>
+    <script>
+        
+        var string = `  <!-- #tab4 -->
+              <div id="tab4" class="tab_content">
+                <ul class="brand_list">
+                  <li><img src="www.playauto.co.kr/img/sender_daehan.png" alt=""></li>
+                  <li><img src="www.playauto.co.kr/img/sender_hanjin2.png" alt=""></li>
+                  <li><img src="www.playauto.co.kr/img/sender_lotte2.png" alt=""></li>
+                  <li><img src="www.playauto.co.kr/img/sender_logen.png" alt=""></li>
+                  <li><img src="www.playauto.co.kr/img/sender_post.png" alt=""></li>
+                </ul>
+              </div>`;
+        var inspect = /[w].*[g]/g;
+        var imgthing = 0;
+        while((img = inspect.exec(string))!=null){
+          imgthing++;
+          document.getElementById('img'+imgthing).src = 'https://'+img;
+         }
+    </script>
+  </body>
+</html>
