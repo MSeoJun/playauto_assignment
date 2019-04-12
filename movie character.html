@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style type="text/css">
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
+    <style>
+        input{
+            border: none;
+            background-color: white;
+            color: black;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -19,38 +19,37 @@
         <input name="aaa" type="checkbox" value="2" onclick="doOpenCheck(this);">조연을 보여주세요.
 
     <table>
-        <tr class="tr1">
-            <td><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=113530"><img src="" id="img1" alt="라미 말렉"></a></td>
-            <td></td>    
+            <td><input type="text" id="title1" value="" disabled></td>
+        <tr>
+            <td><a href="" id="link1"><img src="" id="img1" alt="라미 말렉"></a></td>
+            <td><input type="text" id="name1" value="" disabled></td> <br>  
  
-            <td><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=120524"><img src="" id="img2" alt="루시 보인턴"></a></td>
-             <td></td>
+            <td><a href="" id="link2"><img src="" id="img2" alt="루시 보인턴"></a></td>
+            <td><input type="text" id="name2" value="" disabled></td>
         </tr>   
          <tr>
-             <td><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=412051"><img src="" id="img3" alt="귈림 리"></a></td>
-             <td></td>
+            <td><a href="" id="link3"><img src="" id="img3" alt="귈림 리"></a></td>
+            <td><input type="text" id="name3" value="" disabled></td>
 
-             <td><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=365664"><img src="" id="img4" alt="벤 하디"></a></td>
-             <td></td>
+            <td><a href="" id="link4"><img src="" id="img4" alt="벤 하디"></a></td>
+            <td><input type="text" id="name4" value="" disabled></td>
          </tr>   
          <tr>
-             <td><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=2166"><img src="" id="img5" alt="조셉 마젤로"></a></td>
-             <td></td>
+            <td><a href="" id="link5"><img src="" id="img5" alt="조셉 마젤로"></a></td>
+            <td><input type="text" id="name5" value="" disabled></td>
          </tr>     
     </table>
     <script>
     var str = `
                     
                        <p class="p_thumb">
-										<a href="/movie/bi/pi/basic.nhn?code=113530" title="라미 말렉">
-											<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F172%2F201701231532237191.jpg&type=u111_139&quality=95" width="111" height="139" alt="라미 말렉" onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
+										<a href= title=>
+											<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F172%2F201701231532237191.jpg&type=u111_139&quality=95" width="111" height="139"  onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
 										</a><!-- N=a:act.img -->
 									</p>
 									<div class="p_info">
-										<a href="/movie/bi/pi/basic.nhn?code=113530" title="라미 말렉" class="k_name">라미 말렉</a><!-- N=a:act.name -->
+										<a href="/movie/bi/pi/basic.nhn?code=113530" title="라미 말렉" class="k_name"></a><!-- N=a:act.name -->
 								
-								
-							
 								<em class="e_name">Rami Malek</em>
 								<div class="part">
                                 	<p class="in_prt">
@@ -73,12 +72,12 @@
 						</li><li >
 								
                             <p class="p_thumb">
-                                <a href="/movie/bi/pi/basic.nhn?code=120524" title="루시 보인턴">
-                                    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F138%2F201811011007139481.png&type=u111_139&quality=95" width="111" height="139" alt="루시 보인턴" onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
+                                <a href= title=>
+                                    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F138%2F201811011007139481.png&type=u111_139&quality=95" width="111" height="139" onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
                                 </a><!-- N=a:act.img -->
                             </p>
                             <div class="p_info">
-                                <a href="/movie/bi/pi/basic.nhn?code=120524" title="루시 보인턴" class="k_name">루시 보인턴</a><!-- N=a:act.name -->
+                                <a href="/movie/bi/pi/basic.nhn?code=120524" title="루시 보인턴" class="k_name"></a><!-- N=a:act.name -->
                         
                         
                     
@@ -106,12 +105,12 @@
                 <li >
 
                             <p class="p_thumb">
-                                <a href="/movie/bi/pi/basic.nhn?code=412051" title="귈림 리">
-                                    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F153%2F201803281529254811.jpg&type=u111_139&quality=95" width="111" height="139" alt="귈림 리" onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
+                                <a href= title=>
+                                    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F153%2F201803281529254811.jpg&type=u111_139&quality=95" width="111" height="139"  onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
                                 </a><!-- N=a:act.img -->
                             </p>
                             <div class="p_info">
-                                <a href="/movie/bi/pi/basic.nhn?code=412051" title="귈림 리" class="k_name">귈림 리</a><!-- N=a:act.name -->
+                                <a href="/movie/bi/pi/basic.nhn?code=412051" title="귈림 리" class="k_name"></a><!-- N=a:act.name -->
                         
                         
                     
@@ -139,12 +138,12 @@
                 <li >
                         
                             <p class="p_thumb">
-                                <a href="/movie/bi/pi/basic.nhn?code=365664" title="벤 하디">
-                                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000003656%2FPM365664_174137_000.jpg&type=u111_139&quality=95" width="111" height="139" alt="벤 하디" onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
+                                <a href= title=>
+                                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000003656%2FPM365664_174137_000.jpg&type=u111_139&quality=95" width="111" height="139"  onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
                                 </a><!-- N=a:act.img -->
                             </p>
                             <div class="p_info">
-                                <a href="/movie/bi/pi/basic.nhn?code=365664" title="벤 하디" class="k_name">벤 하디</a><!-- N=a:act.name -->
+                                <a href="/movie/bi/pi/basic.nhn?code=365664" title="벤 하디" class="k_name"></a><!-- N=a:act.name -->
                         
                         
                     
@@ -171,12 +170,12 @@
 
                 <li >
                             <p class="p_thumb">
-                                <a href="/movie/bi/pi/basic.nhn?code=2166" title="조셉 마젤로">
-                                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000021%2FPM2166_181134_000.jpg&type=u111_139&quality=95" width="111" height="139" alt="조셉 마젤로" onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
+                                <a href= title=>
+                                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000021%2FPM2166_181134_000.jpg&type=u111_139&quality=95" width="111" height="139"  onerror="src='https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png'"/>
                                 </a><!-- N=a:act.img -->
                             </p>
                             <div class="p_info">
-                                <a href="/movie/bi/pi/basic.nhn?code=2166" title="조셉 마젤로" class="k_name">조셉 마젤로</a><!-- N=a:act.name -->
+                                <a href="/movie/bi/pi/basic.nhn?code=2166" title="조셉 마젤로" class="k_name"></a><!-- N=a:act.name -->
                         
                         
                     
@@ -203,12 +202,45 @@
 
 
                 /*이미지 출력하기*/
-                var inspect = /(http(s)?:\/\/)([a-z0-9\w]+\.*)+(\/[a-z].*[5])/g;
-                var imgthing = 0;
-                while((img = inspect.exec(str))!=null){
-                imgthing++;
-                document.getElementById('img'+imgthing).src = img;
+                var pattern = /(http(s)?:\/\/)([a-z0-9\w]+\.*)+(\/[a-z].*[5])/g;
+                var img = 0;
+                while((result = pattern.exec(str))!=null)
+                {
+                    console.log(result);
+                img++;
+                document.getElementById("img"+img).src = result;
                 }
+
+                /*상세보기 페이지로 이동*/
+                var pattern1 = /\/movie\/bi\/pi\/basic.nhn\?code=[\d]*/g;
+                var link = 0;
+                while((result1 = pattern1.exec(str))!=null)
+                {
+                    console.log(result1);
+                    link++;
+                    document.getElementById("link"+link).href = "https://movie.naver.com" + result1;
+                }
+
+                /*이름 출력하기*/
+                var pattern2 = /"[가-힣].*[가-힣]"/g;
+                var name = 0;
+                while((result2 = pattern2.exec(str))!=null)
+                {
+                    console.log(result2);
+                    name++;
+                    document.getElementById("name"+name).value = result2;
+                }
+
+                /*주연 출력하기*/
+                var pattern3 = />[가-힣]{2}</g; 
+                var title = 0; 
+                while((result3 = pattern3.exec(str))!=null) 
+                { 
+                    console.log(result3);
+                title++; 
+                document.getElementById("title"+title).value = result3; 
+                } 
+ 
 
                 /*체크박스 하나만 선택하게 함*/ 
                 function doOpenCheck(chk){
@@ -219,6 +251,8 @@
                      }
                 }
            }
+
+           
     </script>
 </body>
 </html>
