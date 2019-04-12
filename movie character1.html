@@ -12,11 +12,17 @@
             color: black;
             font-size: 18px;
         }
+        h1{
+            color: blueviolet;
+        }
     </style>
 </head>
 <body>
-        <input name="aaa" type="checkbox" value="1" onclick="doOpenCheck(this);">주연을 보여주세요.
-        <input name="aaa" type="checkbox" value="2" onclick="doOpenCheck(this);">조연을 보여주세요.
+    <center>
+        <h1>보헤미안 랩소디</h1>
+        <input type="radio" name="myname" OnClick="window.location.href='movie character.html';">주연을 보여주세요.
+        <input type="radio" name="myname" OnClick="window.location.href='movie character1.html';">조연을 보여주세요.
+        
         <table>
                 <td><input type="text" id="title1" value="" disabled></td>
             <tr>
@@ -47,7 +53,8 @@
                     <td><a href="" id="link8"><img src="" id="img8" alt="미셸 던칸"></a></td>
                     <td><input type="text" id="name8" value="" disabled></td>
             </tr>
- 
+            </table>
+        </center>
 
 
 
@@ -363,6 +370,8 @@
                      }
                 }
            }
+
+           /**/
     </script>
 </body>
 </html>
