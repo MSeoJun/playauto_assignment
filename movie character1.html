@@ -30,6 +30,7 @@
         <input type="radio" name="myname" OnClick="window.location.href='movie character.html';">주연을 보여주세요.
         <input type="radio" name="myname" OnClick="window.location.href='movie character1.html';">조연을 보여주세요.
         
+        
         <table>
                 <td><input type="text" id="title1" value="" disabled></td>
             <tr>
@@ -370,7 +371,7 @@
 
                 /*체크박스 하나만 선택하게 함*/ 
                 function doOpenCheck(chk){
-                var obj = document.getElementsByName("aaa");
+                var obj = document.getElementsByName("myname");
                 for(var i=0; i<obj.length; i++){
                 if(obj[i] != chk){
                 obj[i].checked = false;
